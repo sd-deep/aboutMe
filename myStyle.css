@@ -10,30 +10,35 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    margin:0 5vw 5vw;
-    font-family: "Open Sans";   
+    margin:0 ;
+    font-family: "Open Sans"; 
+      
 }
-
+/*head banner*/
 .banner {
     display: flex;
     flex-direction: row;
     background: #00a1f1;
     box-shadow: 0px 3px 20px 2px #2c2c2c;
+    align-items: center;
+    margin:0;
 }
+
+
 .card{
     display: flex;
     flex-direction: column;
-    margin: 2vw 2vw 0 2vw ;
-    width : 40vw;
+    margin: 2vw;
+    /*width : 80vw;*/
 }
 .banner .about-me {
-    margin : 5vw 2vw 0 2vw;
-    
+    margin : 5vw; 
+    color: whitesmoke;
     
 }
 
 .my-image {
-    border: 1px solid #07acf8;
+    border: 1px solid whitesmoke;
     border-radius: 50vw;
     box-shadow: 0px 3px 20px 2px #2c2c2c;
     width: 15vw;
@@ -47,26 +52,68 @@ body {
 .banner .heading h1,h3 {
     margin : 0;
     padding : 0;
-    width : 22vw;
+    color: white;
+    /*width : 22vw;*/
 }
 
+
+/*end of header banner*/
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin:0 ;
+    font-family: "Open Sans";
+    align-items: center;     
+}
 .row h2 {
-    margin:0 0 0 3.6vw;
+    font-size: 2rem;
+        
 }
 
 .row .paragraph {
-    margin : 1vw 0 1vw 0;
+    margin : 1vw 0 1vw 0;   
 }
 
+/*Interests section*/
 .icon-group {
-    margin-top: 2vh; 
+    display: flex;
+    flex-direction: row;        
 }
-.icon-group .icon {
-      margin-right: 2vw;
-      width: 5vw; 
-}
+
+
 .tech-icon{
-    width:16vw;
+    width:12vw;
+    padding: .5vw;
+    margin : .5vw;
+    transition : box-shadow .3s;
+}
+
+.tech-icon:hover{
+    box-shadow: 0px 3px 20px 4px #2c2c2c;
+}
+
+/*Projects section*/
+.projects{
+    display: flex;
+    flex-direction: row;
+}
+.project-details{
+    width:15vw;
+    padding: 0 1vw 1vw 1vw;
+    margin : .5vw;
+    border: 1px solid grey;
+    transition : box-shadow .3s;
+    
+}
+.project-details:hover{
+    box-shadow: 0px 3px 20px 4px #2c2c2c;
 }
 
 
+/*Contact Section*/
+.contact-icon{
+    height:4vw;
+    width:4vw;
+    margin : .5vw;
+}
