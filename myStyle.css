@@ -21,6 +21,7 @@ body {
     background: #00a1f1;
     box-shadow: 0px 3px 20px 2px #2c2c2c;
     align-items: center;
+    justify-content: center;
     margin:0;
 }
 
@@ -77,8 +78,9 @@ body {
 
 /*Interests section*/
 .icon-group {
-    display: flex;
-    flex-direction: row;        
+    display: flex; 
+    flex-direction: row; 
+         
 }
 
 
@@ -110,10 +112,50 @@ body {
     box-shadow: 0px 3px 20px 4px #2c2c2c;
 }
 
-
 /*Contact Section*/
 .contact-icon{
     height:4vw;
     width:4vw;
     margin : .5vw;
 }
+
+
+
+@media only screen and (max-width: 768px) and (min-width :480px){
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .my-image {
+        width: 25vw;
+        height: 25vw;
+    }
+
+
+  }
+  
+  @media only screen and (max-width:480px){
+     
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .my-image {
+        width: 40vw;
+        height: 40vw;
+    }
+  }
