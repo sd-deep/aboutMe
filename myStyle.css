@@ -1,5 +1,5 @@
 :root{
-    font-size : 16px;
+    font-size : 18px;
 }
 
 body {
@@ -65,22 +65,24 @@ body {
     flex-direction: column;
     margin:0 ;
     font-family: "Open Sans";
-    align-items: center;     
+    align-items: center; 
+        
 }
 .row h2 {
     font-size: 2rem;
-        
+    text-align: center;    
 }
 
 .row .paragraph {
-    margin : 1vw 0 1vw 0;   
+    margin : 1vw 0 1vw 0;
+    width : 100%;   
 }
 
 /*Interests section*/
 .icon-group {
     display: flex; 
-    flex-direction: row; 
-         
+    flex-wrap: wrap; 
+    justify-content: center;     
 }
 
 
@@ -94,14 +96,21 @@ body {
 .tech-icon:hover{
     box-shadow: 0px 3px 20px 4px #2c2c2c;
 }
+/*Professional Experiance section*/
+
+.experiance{
+    background-color: aqua;
+    padding: 2vw 10vw;
+}
 
 /*Projects section*/
 .projects{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .project-details{
-    width:15vw;
+    width:16vw;
     padding: 0 1vw 1vw 1vw;
     margin : .5vw;
     border: 1px solid grey;
@@ -116,12 +125,44 @@ body {
 .contact-icon{
     height:4vw;
     width:4vw;
+    padding : 1vw;
     margin : .5vw;
 }
 
+@media only screen and (min-width: 767px) and (max-width :1024px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .my-image {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .tech-icon{
+        width:19vw;
+        
+    }
+
+    .project-details{
+        width:30vw;
+    }
+    .contact-icon{
+        height:6vw;
+        width:6vw;
+    }
 
 
-@media only screen and (max-width: 768px) and (min-width :480px){
+}
+
+@media only screen and (min-width: 480px) and (max-width :768px){
 
     .banner{
         display: flex;
@@ -137,6 +178,17 @@ body {
     .my-image {
         width: 25vw;
         height: 25vw;
+    }
+    .tech-icon{
+        width:25vw;
+        
+    }
+    .project-details{
+        width:35vw;
+    }
+    .contact-icon{
+        height:6vw;
+        width:6vw;
     }
 
 
@@ -157,5 +209,19 @@ body {
     .my-image {
         width: 40vw;
         height: 40vw;
+    }
+
+    .tech-icon{
+        width:35vw;
+        
+    }
+
+    .project-details{
+        width:45vw;
+    }
+
+    .contact-icon{
+        height:8vw;
+        width:8vw;
     }
   }
